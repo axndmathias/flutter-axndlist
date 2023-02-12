@@ -1,7 +1,7 @@
 import 'package:axndlist/src/shared/themes/themes.dart';
 import 'package:flutter/material.dart';
 
-import '../../main.dart';
+import '../home/home_page.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});
@@ -15,7 +15,7 @@ class AppWidget extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: lightThheme,
       darkTheme: darkTheme,
-      home: const MyHomePage(title: 'axndlist'),
+      home: const HomePage(),
     );
   }
 }
