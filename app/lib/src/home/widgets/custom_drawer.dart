@@ -14,9 +14,9 @@ class CustomDrawer extends StatelessWidget {
       },
       children: [
         Padding(
-          padding: const EdgeInsets.only(top: 28, right: 16, bottom: 16),
+          padding: const EdgeInsets.fromLTRB(16, 28, 16, 16),
           child: Text(
-            'Opções',
+            'Options',
             style: Theme.of(context).textTheme.titleSmall,
           ),
         ),
@@ -24,10 +24,10 @@ class CustomDrawer extends StatelessWidget {
           icon: const Icon(Icons.sync),
           label: Row(
             children: [
-              const Text('Sincronização'),
-              const SizedBox(width: 20),
+              const Text('Sync'),
+              const SizedBox(width: 28),
               Text(
-                '12/12/2022 as 12:12',
+                '12/12/2012 at 12:12',
                 style: Theme.of(context).textTheme.bodySmall,
               ),
             ],
@@ -35,7 +35,7 @@ class CustomDrawer extends StatelessWidget {
         ),
         const NavigationDrawerDestination(
           icon: Icon(Icons.settings),
-          label: Text('Configurações'),
+          label: Text('Settings'),
         ),
       ],
     );

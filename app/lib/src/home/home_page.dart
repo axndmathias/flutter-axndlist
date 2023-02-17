@@ -32,34 +32,34 @@ class _HomePageState extends State<HomePage> {
                 segments: const [
                   ButtonSegment(
                     value: 0,
-                    label: Text('Todas'),
+                    label: Text('All'),
                   ),
                   ButtonSegment(
                     value: 1,
-                    label: Text('Pendentes'),
+                    label: Text('Pending'),
                   ),
                   ButtonSegment(
                     value: 2,
-                    label: Text('Concluidas'),
+                    label: Text('Done'),
                   ),
                   ButtonSegment(
                     value: 3,
-                    label: Text('Desativadas'),
+                    label: Text('Deactivated'),
                   ),
                 ],
-                onSelectionChanged: (values) {},
                 selected: const {1},
+                onSelectionChanged: (values) {},
               ),
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
+        icon: const Icon(Icons.edit),
+        label: const Text('New List'),
         onPressed: () {
           Navigator.of(context).pushNamed('./edit');
         },
-        icon: const Icon(Icons.edit),
-        label: const Text('New List'),
       ),
     );
   }
