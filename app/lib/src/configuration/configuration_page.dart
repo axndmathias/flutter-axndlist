@@ -53,7 +53,7 @@ class _ConfigurationPageState extends State<ConfigurationPage> {
             const Text('Data Control'),
             const SizedBox(height: 10),
             OutlinedButton(
-              onPressed: () {},
+              onPressed: appStore.deleteApp,
               child: const Text('Clear cache and restart app'),
             ),
           ],
