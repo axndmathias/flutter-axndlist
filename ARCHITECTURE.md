@@ -1,63 +1,62 @@
-# Arquitetura
+# Architecture
 
-(Geralmente é um documento escrito em inglês)
+(Usually a document written in English)
 
-# Objetivo
+# Objective
 
-Esse documento tem por objetivo principal organizar o processo de desenvolvimento do software.
+The main purpose of this document is to organize the software development process.
 
-# Regras iniciais, limite e Análise
+# Initial rules, limits and analysis
 
-Pontos a serem levados em consideração antes de introduzir uma nova feature:
+Points to take into account before introducing a new feature:
 
-- Todo projeto precisará respeitar as regras de Lint escritas no pacote flutterando-analysis.
-- Esse projeto deve ter cobertura mínima de testes de no mínimo 70%.
-- Camadas globais devem ter um lugar específico na aplicação, por tanto, devem estar na pasta Shared.
-- Cada feature deverá ter sua própria pasta onde conterá todas as camadas necessárias para a execução dos casos de uso da feature.
-- Todos os designs patterns usados no projeto devem estar listados na sessão “Design Patterns” desse documento, caso contrário será considerado implementação errônea.
-- Packages e plugins novos só poderão ser usados nos projetos após avaliação e aprovação de toda equipe responsável pelo projeto.
-- Atualizações no Modelo de domínio só poderão ser aceitas se primeiro for adicionada nesse documento e aprovado por todos os envolvidos no projeto.
-- Não é permitido ter uma classe concreta como dependência de uma camada. Só será aceita coesão com classes abstratas ou interfaces. Com exceção da Store.
-- Cada camada deve ter apenas uma responsabilidade.
+- Every project will need to respect the Lint rules written in the flutterando-analysis package.
+- This project must have a minimum test coverage of at least 70%.
+- Global layers must have a specific place in the application, so they must be in the Shared folder.
+- Each feature should have its own folder containing all the layers needed to execute the feature's use cases.
+- All the design patterns used in the project must be listed in the "Design Patterns" section of this document, otherwise it will be considered an erroneous implementation.
+- New packages and plugins can only be used in projects after evaluation and approval by the entire team responsible for the project.
+- Updates to the Domain Model can only be accepted if they are first added to this document and approved by everyone involved in the project.
+- It is not allowed to have a concrete class as a dependency of a layer. Only cohesion with abstract classes or interfaces will be accepted. With the exception of Store.
+- Each layer should only have one responsibility.
 
 
 
-# Entidades
+# Entities
 
-(Será criado pelos alunos da Masterclass Intermediário 1)
+(To be created by the students of the Intermediate 1 Masterclass)
 
-# Casos de Uso
+# Use Cases
 
-(Será criado pelos alunos da Masterclass Intermediário 1)
+(To be created by students in the Intermediate 1 Masterclass)
 
 
 # Design Patterns
 
-- Repository Pattern: Para acesso a API externa.
-- Service Pattern: Para isolar trechos de códigos com outras responsabilidades.
-- Dependency Injection: Resolver dependências das classes.
-- Store: Guardar e mudar estados.
-- State pattern: Padrão que auxilia no gerenciamento estados.
-- Adapter: Converter um objeto em outro.
-- Result: Trabalhar com retorno Múltiplo.
+- Repository Pattern: For accessing the external API.
+- Service Pattern: To isolate pieces of code with other responsibilities.
+- Dependency Injection: To resolve class dependencies.
+- Store: Save and change states.
+- State pattern: Pattern that helps manage states.
+- Adapter: Convert one object into another.
+- Result: Work with multiple returns.
 
 
-# Package externos (Comum)
+# External packages (Common)
 
-- uno: Cliente HTTP.
-- result: Retorno múltiplo no formato Failure e Success.
-- Mocktail: Para testes de unidade.
+- uno: HTTP client.
+- result: Multiple return in Failure and Success format.
+- Mocktail: For unit tests.
 
 
-# Package externos (App)
+# External package (App)
 
-- flutter_modular: Modularização de rotas e injeção de dependências.
-- realm: Base de dados local.
+- flutter_modular: Route modularization and dependency injection.
+- realm: Local database.
 
-# Package externos (Backend)
+# External package (Backend)
 
-- shelf_modular: Modularização de rotas e injeção de dependências.
-- Shelf: Criação de servidor Web.
-- Postgres: Persistência de dados.
-- Redis: Persistência de dados em memória.
-
+- shelf_modular: Route modularization and dependency injection.
+- Shelf: Web server creation.
+- Postgres: Data persistence.
+- Redis: In-memory data persistence.
