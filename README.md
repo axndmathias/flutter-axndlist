@@ -1,61 +1,56 @@
 # Listinha
 
-Aplicativo para criar várias listas para serem usadas simultaneamente e sincronizadas na nuvem após os dados serem salvos localmente (**Offline-first**).
+Application to create several lists to be used simultaneously and synchronized in the cloud after the data is saved locally (**Offline-first**).
 
 ![image](app.png)
 
-# 1. Funcionalidades
+# 1. Features
 
-1. Autenticação o mais simples possível.
-2. Cadastrar várias listas diferentes.
-3. Marcar e desmarcar itens reposicionando os desmarcados.
-4. Sincronizar dados na nuvem.
-5. Edição de usuário autenticado.
-6. Configuração de dispositivo.
+1. Authentication as simple as possible.
+2. Register several different lists.
+3. Select and deselect items by repositioning the deselected ones.
+4. Synchronize data in the cloud.
+5. Authenticated user editing.
+6. Device configuration.
 
-## 1.1 Autenticação o mais simples possível
+## 1.1 Authentication as simple as possible
 
-A autenticação é necessária para efetuar a sincronização e deve ser opcional, ou seja, solicitada quando o usuário executar manualmente a sincronização.
-A aplicação deve dar suporte a Autenticação “sem-senha” (**Passwordless**) enviando o token por email para fazer o acesso. 
+Authentication is required to perform synchronization and should be optional, i.e. requested when the user manually performs synchronization.
+The application must support "passwordless" authentication (**Passwordless**) by sending the token by email to access it. 
 
-## 1.2 Cadastrar várias listas diferentes.
+## 1.2 Register several different lists.
 
-O usuário poderá criar um número limitado de listas de compras, mostrando as informações totais da lista como: Nome da Lista, valor R$(se houver) e status em forma de card.
+The user will be able to create a limited number of shopping lists, showing the total list information such as: List name, R$ value (if any) and status in card form.
 
-Os status da lista devem ser: Pendente, Concluída, Desativadas.
+List statuses should be: Pending, Completed, Deactivated.
 
-O usuário poderá filtrar as listas por status.
+The user can filter the lists by status.
 
-## 1.3 Marcar e desmarcar itens reposicionando os desmarcados.
+## 1.3 Select and deselect items by repositioning the deselected ones.
 
-Cada lista precisará dividir os itens marcado dos desmarcados e dando a opção ao usuário reposicionar os itens desmarcados.
+Each list will need to divide the checked items from the unchecked ones and give the user the option of repositioning the unchecked items.
 
-## 1.4 Sincronizar dados na nuvem.
+## 1.4 Synchronize data in the cloud.
 
-Todas as listas e seus dados serão guardados localmente no dispositivo do usuário, sendo sincronizados posteriormente na nuvem. A sincronização deve ser automática e as tentativas de sincronização em caso de falha devem ser feito em um espaçamento de minutos. Esse último ponto é importante para economizar bateria em dispositivos móveis.
+All lists and their data will be stored locally on the user's device and then synchronized in the cloud. Synchronization should be automatic and attempts to synchronize in the event of a failure should be made every few minutes. This last point is important for saving battery power on mobile devices.
 
-## 1.5 Edição de usuário autenticado.
+## 1.5 Authenticated user issue.
 
-Caso autenticado, o usuário deveria ter a possibilidade de alterar informações como Nome, Sobrenome e imagem de perfil.
+If authenticated, the user should be able to change information such as First name, Last name and profile picture.
 
-## 1.6 Configuração de dispositivo.
+## 1.6 Device configuration.
 
-O app deverá ter opções de controle de tema e remoção de cache.
-
-
-# 2. Experiência do Usuário
-
-Toda interface será feita usando componentes pré-construidos do Material Design 3.
-Informações de mockup, fonte e assets estão disponíveis no Figma.
-
-[Link do Figma](https://www.figma.com/file/xSoyauWGMb25dsQCBrhPa5/Listinha?node-id=53095%3A27267&t=9eobg3NOs476wXmo-1)
+The app should have options for theme control and cache removal.
 
 
-# 3. Arquitetura
+# 2. User Experience
 
-[Geral](ARCHITECTURE.md)
+The entire interface will be made using pre-built Material Design 3 components.
+Mockup, font and asset information is available on Figma.
+
+[Link Figma](https://www.figma.com/file/xSoyauWGMb25dsQCBrhPa5/Listinha?node-id=53095%3A27267&t=9eobg3NOs476wXmo-1)
 
 
-# 4. Vídeos
+# 3. Architecture
 
-[#1. Iniciando os projetos](https://youtu.be/Y9QwJewv50w)
+[General](ARCHITECTURE.md)
